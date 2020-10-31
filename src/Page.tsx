@@ -3,7 +3,7 @@ import ModuleCard from "./ModuleCard";
 import GameCard from "./GameCard";
 import GameCard2 from "./GameCard2";
 import GameCard3 from "./GameCard3";
-
+import Nav from './nav'
 
 
 import Tab from "./Tab";

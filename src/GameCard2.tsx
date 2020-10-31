@@ -9,9 +9,9 @@ const GameCard2: FC = () => {
       <div className="w-4/5 rounded-lg overflow-hidden shadow-lg">
         <img className="" src="/gamecover2.png" />
         <div className="px-6 py-4">
-          <div className="font-bold text-xl mb-2">เกมคำศัพท์แสนสนุก</div>
+          <div className="font-bold text-xl mb-2">ฟังนิทานกันเถอะ</div>
           <p className="text-gray-700 text-base">
-            ในเกมนี้ป น้องๆจะได้ฝึกทักษาการอ่าน โดยจะมีการ์ดขึ้นมาบล่ๆๆๆๆๆ
+            ในส่วนนี้ เด็กๆจะได้ฟังนิทานภาพ พร้อมกับศึกษาคำศัพท์ไปด้วยกัน โดยเด็กๆจะได้ฝึกการฟังพร้อมกับการอ่านไปพร้อมกัน
           </p>
           < PlayCircleOutlined/>
         </div>

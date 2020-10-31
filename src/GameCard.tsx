@@ -11,7 +11,7 @@ const ModuleCard: FC = () => {
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">เกมคำศัพท์แสนสนุก</div>
           <p className="text-gray-700 text-base">
-            ในเกมนี้ป น้องๆจะได้ฝึกทักษาการอ่าน โดยจะมีการ์ดขึ้นมาบล่ๆๆๆๆๆ
+            ในส่วนนี้ เด็กๆจะได้รับความสนุกในการศึกษาคำศัพท์ ผ่านการเล่นเกม เพื่อการเรียนรู้ที่มีประสิทธิภาพพร้อมการเสริมสร้าง
           </p>
           < PlayCircleOutlined/>
         </div>
