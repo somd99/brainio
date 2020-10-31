@@ -2,6 +2,7 @@ import "./tailwind.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/react-vis/dist/style.css';
 import './App.css';
+import Page from './Page';
 
 import DashBoard from "./dashboard/dashboard";
 import MainGame from "./game/maingame";
@@ -24,6 +25,8 @@ function App() {
       {/* <MainGame4></MainGame4> */}
       {/* <MainGame5></MainGame5> */}
       <Result/>
+
+     <Page/>
     </div>
   );
 }
