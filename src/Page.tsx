@@ -1,10 +1,10 @@
 import React, { FC } from "react";
 import ModuleCard from "./ModuleCard";
 import GameCard from "./GameCard";
+import GameCardLocked from "./GameCardLocked";
 import GameCard2 from "./GameCard2";
 import GameCard3 from "./GameCard3";
-import Nav from './nav'
-
+import Nav from "./nav";
 
 import Tab from "./Tab";
 import Date from "./Date";
@@ -18,17 +18,17 @@ const Page: FC = () => {
             <Date />
             <div className="flex justify-center">
               <p className="text-2xl text-joy-purple1 font-semibold">
-              สวัสดีวันอาทิตย์! 
+                สวัสดีวันอาทิตย์!
               </p>
             </div>
           </div>
           <div className="flex overflow-x-scroll">
-          <GameCard3/>
-          <GameCard />
-          <GameCard2/>
-          <GameCard/>
-          <GameCard/>
-          <GameCard/>
+            <GameCard3 />
+            <GameCard />
+            <GameCard2 />
+            <GameCardLocked />
+            <GameCardLocked />
+            <GameCardLocked />
           </div>
         </div>
       </div>
