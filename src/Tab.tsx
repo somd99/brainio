@@ -2,24 +2,32 @@ import React, { FC } from "react";
 
 const Tab: FC = () => {
   return (
-    <div className="flex flex-col justify-center items-center">
-    <div className="flex justify-center items-center flex-row ">
-      <div className="bg-joy-purple2 px-5 py-8 rounded-lg mr-5 transform ease-in-out duration-300 hover:scale-110 hover:font-bold shadow-2xl text-white hover:bg-joy-purple1">
-        Dyslexia
-      </div>
-      <div className="bg-joy-purple3 px-5 py-8 rounded-lg transform ease-in-out duration-300 hover:scale-110 hover:font-bold shadow-2xl text-white hover:bg-joy-purple1">
-        Dyslexia
-      </div>
-    </div>
-    <div className="flex justify-center items-center flex-row  my-4 ">
-      <div className="bg-joy-purple4 px-5 py-8 rounded-lg mr-5 transform ease-in-out duration-300 hover:scale-110 hover:font-bold shadow-2xl text-white hover:bg-joy-purple1">
-        Dyslexia
-      </div>
-      <div className="bg-joy-purple5 px-5 py-8 rounded-lg transform ease-in-out duration-300 hover:scale-110 hover:font-bold shadow-2xl text-white hover:bg-joy-purple1">
-        Dyslexia
-      </div>
-    </div>
-  </div>
+    <ul className="flex justify-between bg-joy-purple3 w-full ">
+      <li className="mr-3">
+        <a
+          className="inline-block bg-joy-purple3  rounded py-2 px-4  text-white font-semibold"
+          href="#"
+        >
+          Active Pill
+        </a>
+      </li>
+      <li className="mr-3">
+        <a
+          className="inline-block  rounded  py-2 px-4 text-white font-semibold"
+          href="#"
+        >
+          Pill
+        </a>
+      </li>
+      <li className="mr-3">
+        <a
+          className="inline-block py-2 px-4  text-white font-semibold"
+          href="#"
+        >
+          Disabled Pill
+        </a>
+      </li>
+    </ul>
   );
 };
 
