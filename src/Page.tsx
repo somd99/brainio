@@ -10,7 +10,7 @@ const Page: FC = () => {
           <div>
             <div className="flex pt-32">
               <p className="text-2xl text-joy-purple1 font-semibold pb-16">
-                Welcome back, Som!
+                ทดสอบฟ้อนไทย
               </p>
             </div>
             <ModuleCard />
