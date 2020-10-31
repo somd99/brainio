@@ -1,13 +1,14 @@
 import React, { FC } from "react";
-import ModuleCard from "./ModuleCard";
+
+import Date from "./Date";
 import GameCard from "./GameCard";
-import GameCardLocked from "./GameCardLocked";
 import GameCard2 from "./GameCard2";
 import GameCard3 from "./GameCard3";
+import GameCardLocked from "./GameCardLocked";
+import { Link } from "react-router-dom";
+import ModuleCard from "./ModuleCard";
 import Nav from "./nav";
-
 import Tab from "./Tab";
-import Date from "./Date";
 
 const Page: FC = () => {
   return (
@@ -23,7 +24,7 @@ const Page: FC = () => {
             </div>
           </div>
           <div className="flex overflow-x-scroll">
-            <GameCard3 />
+            <GameCard3/>
             <GameCard />
             <GameCard2 />
             <GameCardLocked />

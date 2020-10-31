@@ -1,6 +1,7 @@
 import { Button, Card, Col, Modal, Row } from "react-bootstrap";
 import React, { useEffect, useState } from "react";
 
+import { Link } from "react-router-dom";
 import cat from '../img/cat.jpg'
 
 export default function MainGame(){
@@ -103,7 +104,13 @@ export default function MainGame(){
                     </Modal.Header>
                     <Modal.Footer>
                         <Button className="border border-white bg-red-500 transition transform rounded-full ease-in-out hover:bg-red-600 duration-300 hover:scale-90" onClick={handleClose}>ปิด</Button>
-                        {arrayEquals(select,word) ? <Button className="bg-joy-purple2 transition transform ease-in-out duration-300 hover:scale-110">ไปต่อเลย!</Button>:null}
+                        {arrayEquals(select,word) ?
+                        <div>
+                            <Link to="/game2">
+                                <Button className="bg-joy-purple2 transition transform ease-in-out duration-300 hover:scale-110">ไปต่อเลย!</Button>
+                            </Link>
+                        </div>
+                        :null}
                     </Modal.Footer>
                 </Modal>
         </div>

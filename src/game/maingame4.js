@@ -1,6 +1,7 @@
 import { Button, Card, Col, Modal, Row } from "react-bootstrap";
 import React, { useEffect, useState } from "react";
 
+import { Link } from "react-router-dom";
 import night from '../img/night.jpg'
 
 export default function MainGame4(){
@@ -104,7 +105,14 @@ export default function MainGame4(){
                     </Modal.Header>
                     <Modal.Footer>
                         <Button className="border border-white bg-red-500 transition transform rounded-full ease-in-out hover:bg-red-600 duration-300 hover:scale-90" onClick={handleClose}>ปิด</Button>
-                        {arrayEquals(select,word) ? <Button className="bg-joy-purple2 transition transform ease-in-out duration-300 hover:scale-110">ไปต่อเลย!</Button>:null}
+                        {arrayEquals(select,word) ? 
+                        <div>
+                            <Link to="/game5">
+                                <Button className="bg-joy-purple2 transition transform ease-in-out duration-300 hover:scale-110">ไปต่อเลย!</Button>
+                            </Link>
+                        </div>
+
+                        :null}
                     </Modal.Footer>
                 </Modal>
         </div>
