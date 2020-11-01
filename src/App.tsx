@@ -5,13 +5,11 @@ import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
-import { Link, Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
 import DashBoard from "./dashboard/dashboard";
 import MainGame from "./game/maingame";
 import MainGame2 from "./game/maingame2";
-import MainGame3 from "./game/maingame3";
-import MainGame4 from "./game/maingame4";
 import MainGame5 from "./game/maingame5";
 import Overview from "./Overview";
 import Page from "./Page";
@@ -32,12 +30,6 @@ function App() {
           </Route>
           <Route path="/game2">
             <MainGame2></MainGame2>
-          </Route>
-          <Route path="/game3">
-            <MainGame3></MainGame3>
-          </Route>
-          <Route path="/game4">
-            <MainGame4></MainGame4>
           </Route>
           <Route path="/game5">
             <MainGame5></MainGame5>

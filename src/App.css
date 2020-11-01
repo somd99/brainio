@@ -1,5 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun');
+@import url('https://fonts.googleapis.com/css2?family=Itim');
 
 body {
-    font-family: Kanit;
+    font-family: Sarabun;
+}
+html, body, #app, #app>div {
+    height: 100%
+}
+
+.kid-font{
+    font-family: Itim;
 }
