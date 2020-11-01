@@ -1,34 +1,54 @@
 import { Card, Col, Row } from "react-bootstrap";
-import { VerticalBarSeriesCanvas, XAxis, XYPlot, YAxis } from 'react-vis';
+import { VerticalBarSeriesCanvas, XAxis, XYPlot, YAxis } from "react-vis";
 
 import React from "react";
 
-export default function MiddleBoard(){
-    const greenData = [{x: 'Day 10', y: 10}, {x: 'Day 11', y: 5}, {x: 'Day 12', y: 15}];
-    const blueData = [{x: 'Day 10', y: 12}, {x: 'Day 11', y: 2}, {x: 'Day 12', y: 11}];
+export default function MiddleBoard() {
+  const greenData = [
+    { x: "วันที่ 30", y: 10 },
+    { x: "วันที่ 31", y: 5 },
+    { x: "วันที่ 1", y: 15 },
+  ];
+  const blueData = [
+    { x: "วันที่ 30", y: 12 },
+    { x: "วันที่ 31", y: 2 },
+    { x: "วันที่ 1", y: 11 },
+  ];
 
-    return (
-        <div className="container">
-            <p style={{fontSize:"35px", margin:"0px"}}>ภาพรวม</p>
-           <Row>
-                <Col>
-                    <Card border="grey">
-                        <Card.Body style={{padding:"10px"}}>
-                            <Card.Title style={{fontSize:"20px"}}>Chart</Card.Title>
-                            <XYPlot xType="ordinal" width={200} height={200} xDistance={100}>
-                                <XAxis/>
-                                <YAxis/>
-                                <VerticalBarSeriesCanvas color="#231942" barWidth={10} data={greenData} />
-                                <VerticalBarSeriesCanvas color="#5E548E" barWidth={10} data={blueData} />
-                            </XYPlot>  
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col style={{padding:"0px"}}>
-                    <h1>ดีมาก!</h1>
-                    <p style={{color:"grey", fontSize:"12px"}}>&emsp;&emsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </Col>
-           </Row>
+  return (
+    <div className="">
+      <div className="mx-6 flex flex-col items-start">
+        <div className="flex rounded-lg text-white shadow w-full bg-white">
+          <div className="flex flex-col justify-center items-center w-full">
+            <XYPlot
+              className="flex items-center justify-center mt-3"
+              xType="ordinal"
+              width={200}
+              height={200}
+              xDistance={100}
+            >
+              <XAxis />
+              <YAxis />
+              <VerticalBarSeriesCanvas
+                color="#231942"
+                barWidth={10}
+                data={greenData}
+              />
+              <VerticalBarSeriesCanvas
+                color="#5E548E"
+                barWidth={10}
+                data={blueData}
+              />
+            </XYPlot>
+            <div className="flex  flex-col items-start justify-start w-5/6">
+              <h1 className="text-joy-purple1 text-lg font-bold">การอ่าน</h1>
+              <h1 className="text-joy-purple1 text-sm mb-3.5">
+                ผลคะแนนในระยะสามวันที่ผ่านมาเทียบกับผู้เล่นเกมคนอื่นๆ ในวัยเดียวกัน
+              </h1>
+            </div>
+          </div>
         </div>
-    )
+      </div>
+    </div>
+  );
 }

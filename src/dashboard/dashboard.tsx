@@ -6,7 +6,6 @@ export default function DashBoard(){
     return (
         <div>
             <MiddleBoard></MiddleBoard>
-            <div style={{padding:"10px"}}></div>
             <BottomBoard></BottomBoard>
         </div>
     )

@@ -32,6 +32,7 @@ const Page: FC = () => {
             <GameCardLocked />
           </div>
         </div>
+          <Tab/>
 
       </div>
     </>

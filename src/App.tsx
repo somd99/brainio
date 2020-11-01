@@ -14,7 +14,7 @@ import MainGame5 from "./game/maingame5";
 import Page from "./Page";
 import React from "react";
 import Result from "./result/result";
-import Overview from "./Overview";
+import OverviewTab from "./OverviewTab";
 import Tab from "./Tab";
 
 
@@ -25,8 +25,7 @@ function App() {
       <div className="body">
         <Switch>
           <Route path="/dashboard">
-            <Overview />
-            <DashBoard/>
+            <OverviewTab />
           </Route>
           <Route path="/game1">
             <MainGame></MainGame>
