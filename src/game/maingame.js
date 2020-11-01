@@ -57,8 +57,8 @@ export default function MainGame(){
       }
 
     return(
-        <div className="flex flex-col h-screen kid-font bg-yellow-100" style={{height:"100vh"}}>
-            <div className="bg-joy-purple4" style={{marginBottom:"10px", paddingTop:"10px"}}>
+        <div className="flex flex-col h-screen kid-font bg-white" style={{height:"100vh"}}>
+            <div className="bg-joy-purple2" style={{marginBottom:"10px", paddingTop:"10px"}}>
                 {seconds < 0 ? <p style={{margin:"0px", textAlign:"center", fontSize:"30px", color:"white"}}>เขียนคำตอบให้ถูกต้องนะ!</p>:
                 <div className="rounded-full border border-2 border-joy w-10 bg-white" style={{marginLeft:"200px"}}>
                     <p style={{margin:"0px", textAlign:"center", fontSize:"25px", color:"#BE95C4"}}>{seconds}</p>
@@ -76,10 +76,12 @@ export default function MainGame(){
                 {seconds < 0 ?
                 <div className="container" style={{marginLeft:"10px"}}>
                     <Row>
-                        <Col style={{backgroundColor:"white", height:"68px"}}>
+                        <Col style={{borderBottomStyle:"solid", borderBottomColor:"grey", borderBottomWidth:"3px", height:"71px"}}>
+                            <Row style={{flex: 1,flexDirection: 'row',justifyContent: 'center'}}>
                             {select.map((data) => 
-                                <Button className="text-white text-4xl bg-joy-purple4 ease-in-out transform border border-2 border-joy-purple4" onClick={()=>handleWord(data)} value={data}>{data}</Button>
-                            )}
+                                    <Button className="text-white text-3xl bg-joy-purple4 ease-in-out transform border border-2 border-joy-purple4" onClick={()=>handleWord(data)} value={data}>{data}</Button>
+                                )}
+                            </Row>
                         </Col>
                         <Col>
                             <Button className="flex justify-center items-center border border-white bg-red-500 transition transform rounded-full ease-in-out hover:bg-red-600 duration-300 hover:scale-90 h-full" block onClick={handleDelete}>
@@ -105,28 +107,29 @@ export default function MainGame(){
                
                 
                 
-                <div style={{padding:"10px"}}></div>
+                <div style={{padding:"20px"}}></div>
                 {seconds <0  ?
                 <Col>
                     <Row style={{paddingLeft:"50px",flex: 1,flexDirection: 'row',justifyContent: 'space-between',paddingRight:"50px"}}>
                         {w_word.map((data) => 
-                            <Button className="text-joy-purple3 text-3xl bg-white hover:scale-150 ease-in-out transform hover:text-joy-purple5 transition duration-300 border border-2 border-joy-purple4" onClick={()=>handleWord(data)} value={data}>{data}</Button>
+                            <Button className="text-joy-purple3 text-3xl bg-white hover:scale-150 ease-in-out transform hover:text-joy-purple5 transition duration-300 border border-2 border-joy-purple1" onClick={()=>handleWord(data)} value={data}>{data}</Button>
                         )}
                     </Row>
                 </Col>
                 : null}
                 {seconds<0 ?
-                <Button className="bg-joy-purple3 duration-300 transform ease-in-out hover:bg-joy-purple2 border border-2 border-white rounded-xl text-3xl"  block size="lg" onClick={handleNext}>มั่นใจแล้ว!</Button>
+                <Button className="bg-joy-purple1 duration-300 transform ease-in-out hover:bg-joy-purple3 hover:text-joy-purple1 border border-2 border-joy-purple4 text-3xl"  block size="lg" onClick={handleNext}>มั่นใจแล้ว!</Button>
+            
                 
                 :
                 null}
-                <div className="kid-font">
-                <Modal show={show} onHide={handleClose}>
+                <div style={{fontFamily:"Itim"}}>
+                <Modal style={{fontFamily:"Itim"}} show={show} onHide={handleClose} aria-labelledby="contained-modal-title-vcenter" centered>
                     {arrayEquals(select,word) ? 
                         <Modal.Header>
                             <Modal.Body style={{color:"black", textAlign:"center"}}>
                                 <div style={{display:"flex", flex:"1", flexDirection:"column", justifyContent:"center"}}>
-                                    <p style={{fontSize:"50px"}}>ทำถูกแล้ว!</p>
+                                    <p style={{fontSize:"50px", color:"#F8BA00"}}>ทำถูกแล้ว!</p>
                                     <img style={{height:"300px", width:"300px", marginLeft:"40px"}} src={correct} alt="right"></img>
                                 </div>
                             </Modal.Body>
@@ -135,7 +138,7 @@ export default function MainGame(){
                         <Modal.Header>
                             <Modal.Body style={{color:"black", textAlign:"center"}}>
                                 <div style={{display:"flex", flex:"1", flexDirection:"column", justifyContent:"center"}}> 
-                                    <p style={{fontSize:"50px"}}>ลองใหม่นะ!</p>
+                                    <p style={{fontSize:"50px", color:"#F8BA00"}}>ลองใหม่นะ!</p>
                                     <img src={wrong} alt="wrong"></img>
                                 </div>
                             </Modal.Body>

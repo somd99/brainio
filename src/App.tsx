@@ -8,16 +8,16 @@ import "./App.css";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
 import DashBoard from "./dashboard/dashboard";
+import LoadGame from './game/loadgame'
 import MainGame from "./game/maingame";
 import MainGame2 from "./game/maingame2";
 import MainGame5 from "./game/maingame5";
+import Overview from "./Overview";
 import Page from "./Page";
 import React from "react";
 import Result from "./result/result";
 import OverviewTab from "./OverviewTab";
 import Tab from "./Tab";
-
-
 
 function App() {
   return (
@@ -41,6 +41,9 @@ function App() {
           </Route>
           <Route path="/plan">
             <Page/>
+          </Route>
+          <Route path="/load">
+            <LoadGame/>
           </Route>
         </Switch>
     </div>
