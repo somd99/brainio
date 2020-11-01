@@ -16,6 +16,7 @@ import Overview from "./Overview";
 import Page from "./Page";
 import React from "react";
 import Result from "./result/result";
+import ResultFail from "./result/result_fail";
 import Tab from "./Tab";
 
 function App() {
@@ -44,6 +45,9 @@ function App() {
           </Route>
           <Route path="/load">
             <LoadGame/>
+          </Route>
+          <Route path="/fail">
+            <ResultFail/>
           </Route>
         </Switch>
     </div>
