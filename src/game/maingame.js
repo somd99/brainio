@@ -111,9 +111,9 @@ export default function MainGame(){
                 {seconds <0  ?
                 <Col>
                     <Row style={{paddingLeft:"50px",flex: 1,flexDirection: 'row',justifyContent: 'space-between',paddingRight:"50px"}}>
-                        {w_word.map((data) => 
-                            <Button className="text-joy-purple3 text-3xl bg-white hover:scale-150 ease-in-out transform hover:text-joy-purple5 transition duration-300 border-solid border-2 border-joy-purple1" onClick={()=>handleWord(data)} value={data}>{data}</Button>
-                        )}
+                    {w_word.map((data) => 
+                        <Button className="text-joy-purple3 text-3xl bg-white hover:scale-150 ease-in-out transform hover:text-joy-purple5 transition duration-300 border border-2 border-joy-purple1" onClick={()=>handleWord(data)} value={data}>{data}</Button>
+                    )}
                     </Row>
                 </Col>
                 : null}

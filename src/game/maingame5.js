@@ -91,14 +91,14 @@ export default function MainGame5(){
             :
             <Col>
                 <Row style={{paddingLeft:"50px",flex: 1,flexDirection: 'row',justifyContent: 'center',paddingRight:"50px"}}>
-                    {word.map((data) => 
-                    <div>
-                        <Card>
-                            <Card.Body className="text-joy-purple3 text-5xl bg-white ease-in-out transform border border-2 border-joy-purple4">{data}</Card.Body>
-                        </Card>
-                    </div>
-            
-                    )}
+                {word.map((data) => 
+                        <div>
+                            <Card>
+                                <Card.Body className="text-joy-purple3 text-5xl bg-white ease-in-out transform border-solid border-2 border-joy-purple4">{data}</Card.Body>
+                            </Card>
+                        </div>
+                
+                        )}
                 </Row>
             </Col>
             }
