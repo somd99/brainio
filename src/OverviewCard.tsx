@@ -1,9 +1,30 @@
 import React, { FC } from "react";
+import { Progress } from 'antd';
 
 const OverviewCard: FC = () => {
   return (
     <>
       <div className="mx-6 flex flex-col items-start">
+        <h1 className="text-joy-purple1 text-lg font-bold">ข้อมูลส่วนตัว</h1>
+        <div className="flex rounded-lg text-white shadow w-full bg-joy-purple4">
+          <div className=" flex flex-row my-2.5">
+            <img className="ml-4 rounded-full w-1/3" src="/gamecover3.png" />
+            <div className="flex flex-col px-4 py-2 pt-4 w-full">
+              <div className="flex w-full flex-row justify-between">
+                <h1 className="text-white text-sm">ชื่อ</h1>
+                <h1 className="text-white text-sm">สม</h1>
+              </div>
+
+              <div className="flex w-full flex-row justify-between">
+                <h1 className="text-white text-sm">เกมที่เล่นทั้งหมด</h1>
+                <Progress percent={100} />
+                <h1 className="text-white text-sm">5/12</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="mx-6 flex flex-col items-start pt-3">
         <h1 className="text-joy-purple1 text-lg font-bold">สรุปผล</h1>
         <div className="flex rounded-lg text-white shadow w-full bg-joy-purple2">
           <div className="flex flex-col px-4 py-2 pt-4 w-full">
@@ -80,9 +101,11 @@ const OverviewCard: FC = () => {
             <img className="w-3/6 py-4" src="/congrats.svg" />
             <div className="flex  flex-col items-start justify-start w-5/6">
               <h1 className="text-joy-purple1 text-lg font-bold">การอ่าน</h1>
-              <h1 className="text-joy-purple1 text-sm">น้องสมสามารถอ่านได้เพิ่ม 20 คำ</h1>
+              <h1 className="text-joy-purple1 text-sm">
+                น้องสมสามารถอ่านได้เพิ่ม 20 คำ
+              </h1>
             </div>
-            <div className="w-5/6 py-2 bg-yellow-400 rounded-md items-center text-center mb-2 hover:bg-yellow-600 transition ease-in-out duration-300">
+            <div className="w-5/6 py-2 bg-yellow-400 rounded-md items-center text-center mb-3 mt-1 hover:bg-yellow-600 transition ease-in-out duration-300">
               Explore packages
             </div>
           </div>
