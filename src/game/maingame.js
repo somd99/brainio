@@ -60,7 +60,7 @@ export default function MainGame(){
         <div className="flex flex-col h-screen kid-font bg-white" style={{height:"100vh"}}>
             <div className="bg-joy-purple2" style={{marginBottom:"10px", paddingTop:"10px"}}>
                 {seconds < 0 ? <p style={{margin:"0px", textAlign:"center", fontSize:"30px", color:"white"}}>เขียนคำตอบให้ถูกต้องนะ!</p>:
-                <div className="rounded-full border border-2 border-joy w-10 bg-white" style={{marginLeft:"200px"}}>
+                <div className="rounded-full border-solid border-2 border-joy w-10 bg-white" style={{marginLeft:"200px"}}>
                     <p style={{margin:"0px", textAlign:"center", fontSize:"25px", color:"#BE95C4"}}>{seconds}</p>
                 </div>
                 }
@@ -79,7 +79,7 @@ export default function MainGame(){
                         <Col style={{borderBottomStyle:"solid", borderBottomColor:"grey", borderBottomWidth:"3px", height:"71px"}}>
                             <Row style={{flex: 1,flexDirection: 'row',justifyContent: 'center'}}>
                             {select.map((data) => 
-                                    <Button className="text-white text-3xl bg-joy-purple4 ease-in-out transform border border-2 border-joy-purple4" onClick={()=>handleWord(data)} value={data}>{data}</Button>
+                                    <Button className="text-white text-3xl bg-joy-purple4 ease-in-out transform border-solid border-2 border-joy-purple4" onClick={()=>handleWord(data)} value={data}>{data}</Button>
                                 )}
                             </Row>
                         </Col>
@@ -96,7 +96,7 @@ export default function MainGame(){
                         {word.map((data) => 
                         <div>
                             <Card>
-                                <Card.Body className="text-joy-purple3 text-5xl bg-white ease-in-out transform border border-2 border-joy-purple4">{data}</Card.Body>
+                                <Card.Body className="text-joy-purple3 text-5xl bg-white ease-in-out transform border-solid border-2 border-joy-purple4">{data}</Card.Body>
                             </Card>
                         </div>
                 
@@ -112,13 +112,13 @@ export default function MainGame(){
                 <Col>
                     <Row style={{paddingLeft:"50px",flex: 1,flexDirection: 'row',justifyContent: 'space-between',paddingRight:"50px"}}>
                         {w_word.map((data) => 
-                            <Button className="text-joy-purple3 text-3xl bg-white hover:scale-150 ease-in-out transform hover:text-joy-purple5 transition duration-300 border border-2 border-joy-purple1" onClick={()=>handleWord(data)} value={data}>{data}</Button>
+                            <Button className="text-joy-purple3 text-3xl bg-white hover:scale-150 ease-in-out transform hover:text-joy-purple5 transition duration-300 border-solid border-2 border-joy-purple1" onClick={()=>handleWord(data)} value={data}>{data}</Button>
                         )}
                     </Row>
                 </Col>
                 : null}
                 {seconds<0 ?
-                <Button className="bg-joy-purple1 duration-300 transform ease-in-out hover:bg-joy-purple3 hover:text-joy-purple1 border border-2 border-joy-purple4 text-3xl"  block size="lg" onClick={handleNext}>มั่นใจแล้ว!</Button>
+                <Button className="bg-joy-purple1 duration-300 transform ease-in-out hover:bg-joy-purple3 hover:text-joy-purple1 border-solid border-2 border-joy-purple4 text-3xl"  block size="lg" onClick={handleNext}>มั่นใจแล้ว!</Button>
             
                 
                 :

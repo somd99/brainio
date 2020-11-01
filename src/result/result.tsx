@@ -22,7 +22,7 @@ export default function Result (){
                 <div style={{padding:"10px"}}></div>
                 <div style={{display:"flex", justifyContent:"center"}}>   
                     
-                    <Button onClick={()=>setLink(true)} variant="light" className="bg-joy-purple3 duration-300 transform ease-in-out hover:bg-joy-purple2 border border-2 border-white rounded-xl text-3xl" size="lg" block style={{color:"white"}}>เจอกันวันพรุ่งนี้</Button>
+                    <Button onClick={()=>setLink(true)} variant="light" className="bg-joy-purple3 duration-300 transform ease-in-out hover:bg-joy-purple2 border-solid border-2 border-white rounded-xl text-3xl" size="lg" block style={{color:"white"}}>เจอกันวันพรุ่งนี้</Button>
                 </div>
             </Col>
             {link ? <Redirect to="/dashboard"></Redirect>:null}
