@@ -20,7 +20,7 @@ const ModuleCard: FC = () => {
           < PlayCircleOutlined/>
         </div>
       </div>
-      {link ? <Redirect to="/game1"></Redirect>:null}
+      {link ? <Redirect to="/load"></Redirect>:null}
     </div>
   );
 };
