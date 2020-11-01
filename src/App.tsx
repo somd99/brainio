@@ -13,10 +13,10 @@ import MainGame from "./game/maingame";
 import MainGame2 from "./game/maingame2";
 import MainGame5 from "./game/maingame5";
 import Overview from "./Overview";
+import OverviewTab from "./OverviewTab";
 import Page from "./Page";
 import React from "react";
 import Result from "./result/result";
-import OverviewTab from "./OverviewTab";
 import ResultFail from "./result/result_fail";
 import Tab from "./Tab";
 

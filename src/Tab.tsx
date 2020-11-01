@@ -14,7 +14,7 @@ const Tab: FC = () => {
             className="w-full py-1 flex justify-center flex-row  items-center  hover:no-underline text-white font-semibold  transfrom ease-in-out duration-300"
             href="#"
           >
-            {link1 ? <Redirect to="/dashboard"></Redirect>:null}
+            {link1 ? <Redirect to="/plan"></Redirect>:null}
             <HomeFilled onClick={()=>setLink1(true)} className="text-xl transition transform ease-in-out duration-100 hover:scale-110" />
           </a>
       </li>
@@ -34,7 +34,7 @@ const Tab: FC = () => {
             className="w-full py-1 flex justify-center flex-row  items-center hover:no-underline text-white font-semibold  transfrom ease-in-out duration-300"
             href="#"
           >
-            {link2 ? <Redirect to="/plan"></Redirect>:null}
+            {link2 ? <Redirect to="/dashboard"></Redirect>:null}
             <FundFilled onClick={()=>setLink2(true)} className="text-xl transition transform ease-in-out duration-100 hover:scale-110" />
           </a>
 

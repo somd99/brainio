@@ -14,7 +14,7 @@ export default function MainGame(){
     const word = ["แ","ม","ว"];
     const w_word = ["ม","ว","แ", "น"];
 
-    const [seconds, setSeconds] = useState(5);
+    const [seconds, setSeconds] = useState(3);
     const [isActive, setIsActive] = useState(true);
     const [select, setSelect] = useState([]);
     const [show, setShow] = useState(false);

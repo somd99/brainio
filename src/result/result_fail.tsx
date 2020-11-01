@@ -18,7 +18,7 @@ export default function ResultFail (){
                     <img src={fail} alt="Happy" width={250}/>
                 </div>
                 <div style={{padding:"10px"}}></div>
-                <p style={{textAlign:'center', fontSize:"20px", color:"grey"}}>ไม่เป็นนะน้องเหมือง พรุ่งนี้ลองใหม่</p>
+                <p style={{textAlign:'center', fontSize:"20px", color:"grey"}}>ไม่เป็นนะน้องพายุ พรุ่งนี้ลองใหม่</p>
                 <div style={{padding:"10px"}}></div>
                 <div style={{display:"flex", justifyContent:"center"}}>   
                     

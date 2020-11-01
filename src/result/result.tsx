@@ -18,7 +18,7 @@ export default function Result (){
                     <img src={happy} alt="Happy" width={250}/>
                 </div>
                 <div style={{padding:"10px"}}></div>
-                <p style={{textAlign:'center', fontSize:"20px", color:"grey"}}>วันนี้น้องสมเก่งมาก พรุ่งนี้มาเจอกันใหม่นะ!</p>
+                <p style={{textAlign:'center', fontSize:"20px", color:"grey"}}>วันนี้น้องพายุเก่งมาก พรุ่งนี้มาเจอกันใหม่นะ!</p>
                 <div style={{padding:"10px"}}></div>
                 <div style={{display:"flex", justifyContent:"center"}}>   
                     

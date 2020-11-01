@@ -1,8 +1,11 @@
-import React, { FC } from "react";
-import { Progress } from "antd";
+import React, { FC, useState } from "react";
+
 import DashBoard from "./dashboard/dashboard";
+import { Progress } from "antd";
+import { Redirect } from "react-router-dom";
 
 const OverviewCard: FC = () => {
+  const [link, setLink] = useState(false)
   return (
     <>
       <div className="w-full rounded-b-xl  bg-joy-purple4 flex justify-end items-end flex-col shadow-md ">
@@ -11,7 +14,7 @@ const OverviewCard: FC = () => {
           <div className="flex flex-col">
       
             <h1 className="pt-4 px-4  text-black  text-2xl font-bold ml-6">
-              สวัสดี สม
+              สวัสดี พายุ
             </h1>
             <h1 className="pt-0 pb-2 px-4  text-gray-900  text-sm font-normal  ml-6">
               วันอาทิตย์ที่ 1 พฤศจิกายน
@@ -122,12 +125,13 @@ const OverviewCard: FC = () => {
             <div className="flex  flex-col items-start justify-start w-5/6">
               <h1 className="text-joy-purple1 text-lg font-bold">การอ่าน</h1>
               <h1 className="text-joy-purple1 text-sm">
-                น้องสมสามารถอ่านได้เพิ่ม 20 คำ
+                น้องพายุสามารถอ่านได้เพิ่ม 20 คำ
               </h1>
             </div>
-            <div className="w-5/6 py-2 bg-yellow-400 rounded-md items-center text-center mb-3 mt-1 hover:bg-yellow-600 transition ease-in-out duration-300">
+            <div onClick={()=>{setLink(true)}} className="w-5/6 py-2 bg-yellow-400 rounded-md items-center text-center mb-3 mt-1 hover:bg-yellow-600 transition ease-in-out duration-300">
               รายละเอียดเพิ่มเติม
             </div>
+            {link ? <Redirect to="/plan"></Redirect>:null}
           </div>
         </div>
       </div>

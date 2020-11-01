@@ -12,7 +12,7 @@ export default function MainGame5(){
     const word = ["สี","แ","ด","ง"];
     const w_word = ["สี","ซี","ด", "แ","ง"];
 
-    const [seconds, setSeconds] = useState(5);
+    const [seconds, setSeconds] = useState(3);
     const [isActive, setIsActive] = useState(true);
     const [select, setSelect] = useState([]);
     const [show, setShow] = useState(false);
