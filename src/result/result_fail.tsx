@@ -2,9 +2,9 @@ import { Button, Card, Col } from "react-bootstrap";
 import React, { useState } from "react";
 
 import { Redirect } from "react-router-dom";
-import happy from '../img/happy.png'
+import fail from '../img/fail.png'
 
-export default function Result (){
+export default function ResultFail (){
     const [link, setLink] = useState(false)
 
     return (
@@ -12,13 +12,13 @@ export default function Result (){
             <Col>
                 <div style={{textAlign:'center'}}>
                     <p style={{fontSize:"15px", color:"grey"}}>ผลลัพธ์ของการทำแบบฝึกหัด</p>
-                    <p className="text-yellow-400" style={{fontSize:"80px"}}>เก่งมาก!</p>
+                    <p className="text-yellow-400" style={{fontSize:"80px"}}>ไม่เป็นไร</p>
                 </div>
                 <div style={{display:"flex", justifyContent:"center"}}>
-                    <img src={happy} alt="Happy" width={250}/>
+                    <img src={fail} alt="Happy" width={250}/>
                 </div>
                 <div style={{padding:"10px"}}></div>
-                <p style={{textAlign:'center', fontSize:"20px", color:"grey"}}>วันนี้น้องสมเก่งมาก พรุ่งนี้มาเจอกันใหม่นะ!</p>
+                <p style={{textAlign:'center', fontSize:"20px", color:"grey"}}>ไม่เป็นนะน้องเหมือง พรุ่งนี้ลองใหม่</p>
                 <div style={{padding:"10px"}}></div>
                 <div style={{display:"flex", justifyContent:"center"}}>   
                     
